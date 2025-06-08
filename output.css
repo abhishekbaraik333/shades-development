@@ -285,6 +285,9 @@
       border-color: color-mix(in oklab, var(--color-green-500) 30%, transparent);
     }
   }
+  .border-t-\[\#21784d\] {
+    border-top-color: #21784d;
+  }
   .border-t-green-700 {
     border-top-color: var(--color-green-700);
   }
@@ -632,7 +635,7 @@
 }
 .navbar.scrolled {
   padding: 0.8rem 5%;
-  border-bottom: 1px solid rgb(33, 120, 77);
+  border-bottom: 1px solid #21784d;
   backdrop-filter: blur(10px);
 }
 .logo a {
