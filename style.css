@@ -364,6 +364,7 @@ body.no-scroll {
 
   .hero-content h1 {
     font-size: 2.5rem;
+    line-height: 2.5rem;
   }
 
   .hero-content p {
@@ -377,6 +378,7 @@ body.no-scroll {
   .section {
     padding: 4rem 1.5rem;
   }
+  
 }
 
 @media screen and (max-width: 480px) {
@@ -389,12 +391,13 @@ body.no-scroll {
   }
 
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .section-title {
     font-size: 1.8rem;
   }
+
 }
 
 
@@ -404,10 +407,8 @@ body.no-scroll {
   --black: hsl(240, 15%, 9%);
   --paragraph: hsl(0, 0%, 83%);
   --line: hsl(240, 9%, 17%);
-  --primary: hsl(133, 61%, 35%);
-
+  --primary: hsl(133, 100%, 60%);
   position: relative;
-
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -544,7 +545,6 @@ body.no-scroll {
 
 .card .button {
   cursor: pointer;
-
   padding: 0.5rem;
   width: 100%;
   background-image: linear-gradient(
@@ -571,7 +571,7 @@ body.no-scroll {
   display: flex;
   justify-content: center;
   --color-text: #ffffff;
-  --color-background: #187c39;
+  --color-background: #17552c;
   --color-outline: #14ff2780;
   --color-shadow: #00000080;
 }
@@ -693,4 +693,15 @@ body.no-scroll {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+@media(max-width: 768px) {
+  .btn-content {
+    padding: 0px 20px;
+    font-size: 16px;
+  }
+
+  .btn-content .icon-arrow {
+    width: 6px;
+  }
 }
