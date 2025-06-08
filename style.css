@@ -397,13 +397,6 @@ body.no-scroll {
   }
 }
 
-/* Additional padding for sections to account for fixed navbar */
-#about,
-#services,
-#portfolio,
-#contact {
-  padding-top: 100px; /* Navbar height + some extra space */
-}
 
 /* From Uiverse.io by iconicchandu */
 .card {
@@ -684,7 +677,7 @@ body.no-scroll {
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   background: linear-gradient(to right, #f5f7fa, #1a4332);
   -webkit-background-clip: text;
   background-clip: text;

@@ -908,9 +908,6 @@ body.no-scroll {
     font-size: 1.8rem;
   }
 }
-#about, #services, #portfolio, #contact {
-  padding-top: 100px;
-}
 .card {
   --white: hsl(0, 0%, 100%);
   --black: hsl(240, 15%, 9%);
@@ -1114,7 +1111,7 @@ body.no-scroll {
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   background: linear-gradient(to right, #f5f7fa, #1a4332);
   -webkit-background-clip: text;
   background-clip: text;
