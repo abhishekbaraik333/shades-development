@@ -23,7 +23,7 @@
 .navbar.scrolled {
   padding: 0.8rem 5%;
   /* background: rgba(10, 25, 47, 0.95); */
-  border-bottom: 1px solid #21784d;
+  border-bottom: 1px solid #5d5e5e;
   backdrop-filter: blur(10px);
 }
 
@@ -37,7 +37,7 @@
 }
 
 .logo a:hover {
-  color: #00cc55;
+  color: #7c7f7d;
   text-shadow: 0 0 10px rgba(0, 168, 204, 0.3);
 }
 
@@ -50,7 +50,7 @@
 }
 
 .nav-link {
-  color: #f5f7fa;
+  color: #7d7d7d;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
@@ -60,7 +60,7 @@
 }
 
 .nav-link:hover {
-  color: #1b5d28;
+  color: #eeeeee;
 }
 
 .nav-link::after {
@@ -70,7 +70,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #1b5d28;
+  background-color: #ffffff;
   transition: width 0.3s ease;
 }
 
@@ -79,12 +79,12 @@
 }
 
 .nav-link.active {
-  color: #1b5d28;
+  color: #e9e9e9;
 }
 
 .nav-link.active::after {
   width: 100%;
-  background-color: #1b5d28;
+  background-color: #ebebeb;
 }
 
 .hamburger {
@@ -104,7 +104,6 @@
 main {
   width: 100%;
   height: 100%;
-
   background: #000000ee;
   --gap: 5em;
   --line: 1px;
@@ -151,7 +150,7 @@ main {
   margin-bottom: 1.5rem;
   letter-spacing: 1px;
   line-height: 4rem;
-  background: linear-gradient(to right, #f5f7fa, #1a4332);
+  background: linear-gradient(to right, #f5f7fa, #454545);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -162,50 +161,6 @@ main {
   margin-bottom: 2.5rem;
   line-height: 1.8;
   opacity: 0.9;
-}
-
-.cta-button {
-  background-color: #1a4332;
-  color: #f5f7fa;
-  border: none;
-  padding: 1rem 2.5rem;
-  font-size: 1.1rem;
-  border-radius: 30px;
-  cursor: pointer;
-  font-weight: 600;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 204, 51, 0.4);
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.cta-button:hover {
-  background-color: #3f4540;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(40, 42, 41, 0.5);
-}
-
-.cta-button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    transparent,
-    rgba(255, 255, 255, 0.2),
-    transparent
-  );
-  transition: all 0.5s ease;
-  z-index: -1;
-}
-
-.cta-button:hover::before {
-  left: 100%;
 }
 
 /* Section Styles */
@@ -341,7 +296,7 @@ body.no-scroll {
     left: -100%;
     top: 70px;
     flex-direction: column;
-    background: rgb(9, 39, 21);
+    background: rgb(47, 47, 47);
     /* backdrop-filter: blur(10px); */
     width: 250px;
     text-align: center;
@@ -359,7 +314,7 @@ body.no-scroll {
 
   .nav-menu.active {
     left: 0;
-    border-left: 3px solid #00cc14;
+    border-left: 3px solid #646464;
   }
 
   .hero-content h1 {
@@ -407,7 +362,7 @@ body.no-scroll {
   --black: hsl(240, 15%, 9%);
   --paragraph: hsl(0, 0%, 83%);
   --line: hsl(240, 9%, 17%);
-  --primary: hsl(133, 100%, 60%);
+  --primary: hsl(0, 0%, 30%);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -422,8 +377,8 @@ body.no-scroll {
     ),
     radial-gradient(at 49% 30%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
     radial-gradient(at 14% 26%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
-    radial-gradient(at 0% 64%, hsl(137, 98%, 26%) 0px, transparent 85%),
-    radial-gradient(at 41% 94%, hsl(124, 97%, 36%) 0px, transparent 85%),
+    radial-gradient(at 0% 64%, hsl(0, 0%, 22%) 0px, transparent 85%),
+    radial-gradient(at 41% 94%, hsl(120, 0%, 56%) 0px, transparent 85%),
     radial-gradient(at 100% 99%, hsl(188, 94%, 13%) 0px, transparent 85%);
 
   border-radius: 1rem;
@@ -523,10 +478,9 @@ body.no-scroll {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 1rem;
   height: 1rem;
-  background-color: var(--primary);
+  background-color: white;
 
   border-radius: 50%;
 }
@@ -549,13 +503,11 @@ body.no-scroll {
   width: 100%;
   background-image: linear-gradient(
     0deg,
-    hsl(130, 65%, 29%),
-    hsl(141, 98%, 26%) 100%
+    hsl(0, 0%, 27%),
+    hsl(180, 1%, 25%) 100%
   );
-
   font-size: 0.75rem;
   color: var(--white);
-
   border: 0;
   border-radius: 9999px;
   box-shadow: inset 0 -2px 25px -4px var(--white);
@@ -566,119 +518,13 @@ body.no-scroll {
   transform: scale(1.02);
 }
 
-/* From Uiverse.io by Li-Deheng */
-.btn-conteiner {
-  display: flex;
-  justify-content: center;
-  --color-text: #ffffff;
-  --color-background: #17552c;
-  --color-outline: #14ff2780;
-  --color-shadow: #00000080;
-}
-
-.btn-content {
-  display: flex;
-  align-items: center;
-  padding: 5px 30px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 20px;
-  color: var(--color-text);
-  background: var(--color-background);
-  transition: 1s;
-  border-radius: 100px;
-  box-shadow: 0 0 0.2em 0 var(--color-background);
-}
-
-.btn-content:hover,
-.btn-content:focus {
-  transition: 0.5s;
-  -webkit-animation: btn-content 1s;
-  animation: btn-content 1s;
-  outline: 0.1em solid transparent;
-  outline-offset: 0.2em;
-  box-shadow: 0 0 0.4em 0 var(--color-background);
-}
-
-.btn-content .icon-arrow {
-  transition: 0.5s;
-  margin-right: 0px;
-  transform: scale(0.4);
-}
-
-.btn-content:hover .icon-arrow {
-  transition: 0.5s;
-  margin-right: 25px;
-}
-
-.icon-arrow {
-  width: 10px;
-  margin-left: 10px;
-  position: relative;
-}
-
-/* SVG */
-#arrow-icon-one {
-  transition: 0.4s;
-  transform: translateX(-60%);
-}
-
-#arrow-icon-two {
-  transition: 0.5s;
-  transform: translateX(-30%);
-}
-
-.btn-content:hover #arrow-icon-three {
-  animation: color_anim 1s infinite 0.2s;
-}
-
-.btn-content:hover #arrow-icon-one {
-  transform: translateX(0%);
-  animation: color_anim 1s infinite 0.6s;
-}
-
-.btn-content:hover #arrow-icon-two {
-  transform: translateX(0%);
-  animation: color_anim 1s infinite 0.4s;
-}
-
-/* SVG animations */
-@keyframes color_anim {
-  0% {
-    fill: white;
-  }
-
-  50% {
-    fill: var(--color-background);
-  }
-
-  100% {
-    fill: white;
-  }
-}
-
-/* Button animations */
-@-webkit-keyframes btn-content {
-  0% {
-    outline: 0.2em solid var(--color-background);
-    outline-offset: 0;
-  }
-}
-
-@keyframes btn-content {
-  0% {
-    outline: 0.2em solid var(--color-background);
-    outline-offset: 0;
-  }
-}
-
 .btn-shine {
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 4rem;
   margin-bottom: 4rem;
-  background: linear-gradient(to right, #f5f7fa, #1a4332);
+  background: linear-gradient(to right, #f5f7fa, #434443);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -689,7 +535,7 @@ body.no-scroll {
   font-weight: 700;
   letter-spacing: 1px;
   line-height: 4rem;
-  background: linear-gradient(to right, #f5f7fa, #1a4332);
+  background: linear-gradient(to right, #f5f7fa, #494a49);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -704,4 +550,85 @@ body.no-scroll {
   .btn-content .icon-arrow {
     width: 6px;
   }
+}
+
+/* From Uiverse.io by MikeeMikee */ 
+.discord-button {
+  cursor: pointer;
+  border: none;
+  background: #727272;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  /* position: fixed; */
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: grid;
+  place-content: center;
+  transition:
+    background 300ms,
+    transform 200ms;
+  font-weight: 600;
+}
+
+.button__text {
+  position: absolute;
+  inset: 0;
+  animation: text-rotation 8s linear infinite;
+
+  > span {
+    position: absolute;
+    transform: rotate(calc(22deg * var(--index)));
+    inset: 7px;
+  }
+}
+
+.button__circle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  background: #212121;
+  color: #727272;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button__icon--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.discord-button:hover {
+  background: #000;
+  transform: scale(1.05);
+}
+
+.discord-button:hover .button__icon {
+  color: #fff;
+}
+
+.discord-button:hover .button__icon:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.discord-button:hover .button__icon--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
+@keyframes text-rotation {
+  to {
+    rotate: 360deg;
+  }
+}
+
+.discord-button:active {
+  transform: scale(0.95);
 }
