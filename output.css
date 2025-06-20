@@ -859,7 +859,7 @@ main {
   background-size: var(--gap) var(--gap);
 }
 .hero {
-  min-height: 80vh;
+  min-height: 100vh;
   padding-top: 80px;
   display: flex;
   align-items: center;
@@ -963,6 +963,9 @@ body.no-scroll {
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
+  }
+  .hero {
+    min-width: 80vh;
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;

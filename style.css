@@ -126,7 +126,7 @@ main {
 
 /* Hero Section */
 .hero {
-  min-height: 80vh;
+  min-height: 100vh;
   padding-top: 80px; /* Add padding equal to navbar height */
   /* background: linear-gradient(135deg, #1a2639 0%, #0c1e35 100%); */
   display: flex;
@@ -278,6 +278,9 @@ body.no-scroll {
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
+  }
+  .hero{
+    min-width: 80vh;
   }
 
   .hamburger.active .bar:nth-child(2) {
