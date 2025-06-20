@@ -767,6 +767,9 @@
 * {
   font-family: "Geist", sans-serif;
 }
+body {
+  background-color: #000;
+}
 .navbar {
   display: flex;
   justify-content: space-between;

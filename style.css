@@ -4,6 +4,10 @@
   font-family: "Geist", sans-serif;
 }
 
+body{
+  background-color: #000;
+}
+
 /* Navbar Styles */
 .navbar {
   display: flex;
