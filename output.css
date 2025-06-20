@@ -859,7 +859,7 @@ main {
   background-size: var(--gap) var(--gap);
 }
 .hero {
-  min-height: 100vh;
+  min-height: 80vh;
   padding-top: 80px;
   display: flex;
   align-items: center;
