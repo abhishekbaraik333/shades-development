@@ -1233,6 +1233,11 @@ body.no-scroll {
 .discord-button:active {
   transform: scale(0.95);
 }
+@media (max-width:768px) {
+  .discord-button {
+    display: none;
+  }
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
